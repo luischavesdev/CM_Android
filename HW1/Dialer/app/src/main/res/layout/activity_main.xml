@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/topRow"
+        layout="@layout/dialer_top_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnQuick1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/btnQuick2"
+        app:layout_constraintTop_toBottomOf="@+id/topRow" />
+
+    <Button
+        android:id="@+id/btnQuick2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topRow" />
+
+    <Button
+        android:id="@+id/btnQuick3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/btnQuick2"
+        app:layout_constraintTop_toBottomOf="@+id/topRow" />
+
+    <Button
+        android:id="@+id/btnDial1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@+id/btnDial2"
+        app:layout_constraintTop_toBottomOf="@+id/btnQuick1" />
+
+    <Button
+        android:id="@+id/btnDial2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnQuick2" />
+
+    <Button
+        android:id="@+id/btnDial3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        app:layout_constraintStart_toEndOf="@+id/btnDial2"
+        app:layout_constraintTop_toBottomOf="@+id/btnQuick3" />
+
+    <Button
+        android:id="@+id/btnDial4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        app:layout_constraintEnd_toStartOf="@+id/btnDial5"
+        app:layout_constraintTop_toBottomOf="@+id/btnDial1" />
+
+    <Button
+        android:id="@+id/btnDial5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDial2" />
+
+    <Button
+        android:id="@+id/btnDial6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        app:layout_constraintStart_toEndOf="@+id/btnDial5"
+        app:layout_constraintTop_toBottomOf="@+id/btnDial3" />
+
+    <Button
+        android:id="@+id/btnDial7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        app:layout_constraintEnd_toStartOf="@+id/btnDial8"
+        app:layout_constraintTop_toBottomOf="@+id/btnDial4" />
+
+    <Button
+        android:id="@+id/btnDial8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDial5" />
+
+    <Button
+        android:id="@+id/btnDial9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        app:layout_constraintStart_toEndOf="@+id/btnDial8"
+        app:layout_constraintTop_toBottomOf="@+id/btnDial6" />
+
+    <Button
+        android:id="@+id/btnDial0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDial8" />
+
+    <Button
+        android:id="@+id/btnDialAst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        app:layout_constraintEnd_toStartOf="@+id/btnDial0"
+        app:layout_constraintTop_toBottomOf="@+id/btnDial7" />
+
+    <Button
+        android:id="@+id/btnDialCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#"
+        app:layout_constraintStart_toEndOf="@+id/btnDial0"
+        app:layout_constraintTop_toBottomOf="@+id/btnDial9" />
+
+    <ImageButton
+        android:id="@+id/btnPhone"
+        android:layout_width="77dp"
+        android:layout_height="76dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/phone_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDial0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
